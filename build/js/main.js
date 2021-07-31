@@ -1,11 +1,2 @@
-$(document).ready(function(){
-  $('.slider').slick({
-    dots: true, //включаем точки
-    vertical: true, //уже понятно 
-    appendDots:$('.custom-dots') //передаем блок с нашими кастомными точками
-
-  });
-});
-
-
+$(document).ready((function(){$(".slider").slick({dots:!0,vertical:!0,appendDots:$(".custom-dots")})}));
 //# sourceMappingURL=../sourcemaps/main.js.map
