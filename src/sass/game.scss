@@ -1,0 +1,43 @@
+$Abt:Akrobat;
+
+////slieder 
+.slider{
+width: 90%; /* ширина слайдера в процентах относительно родительского блока (body) */
+}
+.slider__item {
+	width: 100%; /* Ширина слайда относительно родительского блока (.slider) */
+	height: 750px; /* Высота слайда */
+
+}
+
+.bg1{
+	background: red;
+}
+
+.bg2{
+	background: purple;
+}
+
+.custom-dots{
+	position: absolute; /* абсолютное позиционирование , в данном случае потому что я работаю в пустом проекте */ 
+	right: 5%;
+	top: 50%;
+}
+.custom-dots ul{
+	list-style: none;/*  убираем точки от тега ul */
+	display: flex;
+	flex-direction: column; 
+}
+.custom-dots ul li{
+}
+.custom-dots ul li button{ /* кастомизируем наши точки */
+	background: red;
+	width: 15px;
+	height: 15px;
+	border: none;
+
+
+}
+.slick-dots li button::before {
+	opacity: 0 !important; /* убираем старые */
+}
