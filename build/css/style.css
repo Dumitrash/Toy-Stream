@@ -457,4 +457,86 @@ body {
   line-height: 150%;
   color: #000000; }
 
+.head__title h1 {
+  font-family: Zona;
+  font-weight: 800;
+  font-size: 72px;
+  line-height: 85px; }
+  @media only screen and (max-width: 1440px) {
+    .head__title h1 {
+      font-size: 58px; } }
+
+.cart {
+  /* .cart__window */
+  /* .cart__img */
+  /* .cart__date */
+  /* .cart__title */
+  /* .cart__description */
+  /* .cart__arrow */ }
+  .cart__link {
+    text-decoration: none;
+    color: black; }
+  .cart__link:hover {
+    color: black; }
+  .cart__window {
+    background: #F5F5F5;
+    width: 100%;
+    margin-bottom: 20px; }
+  .cart__img {
+    overflow: hidden; }
+    .cart__img img {
+      width: 100%;
+      height: auto;
+      -webkit-transition: all 1s ease;
+      -o-transition: all 1s ease;
+      transition: all 1s ease; }
+  .cart__date span {
+    font-family: Akrobat;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 150%;
+    color: #C3B6B6; }
+  .cart__date span:before {
+    content: url("../img/browser-outline.svg");
+    position: relative;
+    top: 7px;
+    margin-right: 10px; }
+  .cart__title h3 {
+    font-family: Akrobat;
+    font-weight: 800;
+    font-size: 32px;
+    line-height: 40px; }
+    @media only screen and (max-width: 1440px) {
+      .cart__title h3 {
+        font-size: 28px; } }
+  .cart__description {
+    padding: 40px; }
+  .cart__paragr p {
+    font-family: Akrobat;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 30px; }
+    @media only screen and (max-width: 1440px) {
+      .cart__paragr p {
+        font-size: 20px; } }
+  .cart__arrow {
+    width: 75px;
+    height: 50px;
+    background: url("../img/newsarrow.svg") no-repeat center center;
+    position: relative;
+    left: -20%;
+    opacity: 0;
+    -webkit-transition: all 0.7s ease;
+    -o-transition: all 0.7s ease;
+    transition: all 0.7s ease; }
+  .cart__window:hover .cart__img img {
+    -webkit-transform: scale(1.3) rotate(-25deg);
+        -ms-transform: scale(1.3) rotate(-25deg);
+            transform: scale(1.3) rotate(-25deg); }
+  .cart__window:hover .cart__arrow {
+    left: 0;
+    opacity: 1; }
+
 /*# sourceMappingURL=../sourcemaps/style.css.map */
