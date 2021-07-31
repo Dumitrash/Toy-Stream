@@ -15,6 +15,14 @@
 	bold
 	);
 
+@include font(
+	Montserrat,
+	url(../fonts/Montserrat-Black.ttf),
+	url(../fonts/Montserrat-Black.wolf),
+	url(../fonts/Montserrat-Black.wolf2),
+	bold
+	);
+
 $Abt:Akrobat;
 html{
 

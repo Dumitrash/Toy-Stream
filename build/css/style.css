@@ -12,6 +12,13 @@
   src: url(../fonts/Akrobat.woff2);
   font-style: bold; }
 
+@font-face {
+  font-family: Montserrat;
+  src: url(../fonts/Montserrat-Black.ttf);
+  src: url(../fonts/Montserrat-Black.wolf);
+  src: url(../fonts/Montserrat-Black.wolf2);
+  font-style: bold; }
+
 html {
   width: 100%;
   max-width: 100%; }
@@ -441,6 +448,9 @@ body {
 .contact-about__contact {
   margin-top: 200px; }
 
+.contact-about__title {
+  margin-top: 220px; }
+
 .contact-about__title-txt1 {
   font-family: Zona;
   font-style: normal;
@@ -450,11 +460,20 @@ body {
   text-transform: uppercase;
   color: #000000; }
 
+.contact-about__subtitle {
+  margin-top: 62px; }
+
 .contact-about__subtitle-txt2 {
   font-family: Montserrat;
   font-style: normal;
   font-size: 26px;
   line-height: 150%;
   color: #000000; }
+
+.wrap {
+  margin-top: 150px; }
+  .wrap__map {
+    height: 525px;
+    width: 945px; }
 
 /*# sourceMappingURL=../sourcemaps/style.css.map */
