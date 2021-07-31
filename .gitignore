@@ -1,4 +1,3 @@
-/build/*
 /node_modules/*
 # No push gulpfile.js package.json package-lock.json
 gulpfile.js
