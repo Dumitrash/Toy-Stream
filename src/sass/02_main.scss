@@ -1,0 +1,273 @@
+
+
+$Abt:Akrobat;
+
+.bbg{
+	position: absolute;
+	top: 0;
+	right: 0;
+	width: 55%;
+	height: 59em;
+	background: #FFEE2F;
+	z-index: -11;
+}
+
+
+.aboutt {
+
+	&__wraptitle {
+/*		padding-right:40px;*/
+		display: flex;
+		flex-direction: column;
+
+
+	}
+
+	&__wrap-txt{
+		display: flex;
+	}
+
+	&__title {
+		font-family: Zona ;
+		font-style: normal;
+		font-weight: 800;
+		font-size: 72px;
+		line-height: 85px;
+		text-transform: uppercase;
+		color: #000;
+		@media screen and (min-width: 1440px){
+			font-size: 52px;
+		}
+	}
+
+	&__subtitle{
+		font-family: Abt;
+		font-style: normal;
+		font-weight: 600;
+		font-size: 24px;
+		line-height: 30px;
+		color: #000000;
+		@media screen and (min-width: 1440px){
+			font-size: 20px;
+		}
+	}
+
+	&__txt {
+		margin-top: 7%;
+		display:flex;
+		margin-left: -20px;
+	}
+
+	&__txt2{
+		margin-top: 2%;
+		width: 92%;
+		display: flex;
+		justify-content: space-between;
+		margin-left: -20px;
+	}
+
+	&__contact{
+		margin-top: 138px;
+		margin-left: 30px;
+		display :flex;
+	}
+
+	
+	&__group-cart {
+		width: 100%;
+		height: 500px;
+	}
+	&__cart {
+		width: 140px;
+		
+	}
+	&__image {
+		margin-bottom: 2.5em;
+		width: 140px;
+		height: 140px;
+		background: #E8D935;
+		///////////////////////////////////////////////////////
+		box-shadow: 30px -30px 0px 0px rgba(242,227,58,1);
+		animation-name: shadow;
+		animation-duration: 7s;
+		animation-iteration-count: infinite;
+		@media screen and (min-width: 1440px){
+			margin-bottom: 1em;
+			width: 110px;
+			height: 110px;
+		}
+
+	}
+	@keyframes shadow {
+		0% { box-shadow: 30px -30px 0px 0px rgba(242,227,58,1); }
+		25% {box-shadow: -30px -30px 0px 0px rgba(242,227,58,1);}
+		50% {box-shadow: -30px 30px 0px 0px rgba(242,227,58,1);}
+		75% {box-shadow: 30px 30px 0px 0px rgba(242,227,58,1);}
+		100% {box-shadow: 30px -30px 0px 0px rgba(242,227,58,1);}
+	}
+		/////////////////////////////////////////////////////////////////
+	&__image_flag {
+		background:url('../img/flag.svg')  no-repeat 50% 50%;
+		width:100%;
+		height:100%;
+	}
+	&__wrap-text {
+	}
+	&__head-txt {
+		font-family: $Abt;
+		font-style: normal;
+		font-weight: 900;
+		font-size: 44px;
+		line-height: 55px;
+		@media screen and (min-width: 1440px){
+			font-size: 36px;
+		}
+	}
+	&__parag {
+		width: 220px;
+		font-family: $Abt;
+		font-style: normal;
+		font-weight: 600;
+		font-size: 20px;
+		line-height: 30px;
+		color:#938700;
+		@media screen and (min-width: 1440px){
+			font-size: 18px;
+		}
+	}
+	&__image_colba {
+		background:url('../img/colba.svg') no-repeat  50% 50%;
+		width:100%; 
+		height:100%;
+	}
+	&__image_kubok {
+		background:url('../img/kubok.svg') no-repeat  50% 50%;
+		width:100%;
+		height:100%;
+	}
+	&__image_star {
+		background:url('../img/star.svg') no-repeat  50% 50%;
+		width:100%;
+		height:100%;
+	}
+
+	&__group-two{
+		margin-top: 45px;
+		display: flex;
+		justify-content:space-between;
+	}
+
+
+}
+////////////////////
+
+.nav-item{
+	display: block;
+	position: relative;
+}
+.nav-item a:after{
+	content: '';
+	position: absolute;
+	bottom: 0;
+	left: 50%;
+	width: 0%;
+	height: 3px;
+	background: red;
+	opacity: 0;
+	border-radius: 10px;
+	transition: left 0.7s, width 0.7s, opacity 1s;
+}
+.nav-item a:hover:after{
+	left: 0;
+	width: 100%;
+	opacity: 1;
+}
+
+
+////slieder 
+.slider{
+width: 90%; /* ширина слайдера в процентах относительно родительского блока (body) */
+}
+.slider__item {
+	width: 100%; /* Ширина слайда относительно родительского блока (.slider) */
+	height: 750px; /* Высота слайда */
+
+}
+
+.bg1{
+	background: red;
+}
+
+.bg2{
+	background: purple;
+}
+
+.custom-dots{
+	position: absolute; /* абсолютное позиционирование , в данном случае потому что я работаю в пустом проекте */ 
+	right: 5%;
+	top: 50%;
+}
+.custom-dots ul{
+	list-style: none;/*  убираем точки от тега ul */
+	display: flex;
+	flex-direction: column; 
+}
+.custom-dots ul li{
+}
+.custom-dots ul li button{ /* кастомизируем наши точки */
+	background: red;
+	width: 15px;
+	height: 15px;
+	border: none;
+
+
+}
+.slick-dots li button::before {
+	opacity: 0 !important; /* убираем старые */
+}
+
+
+
+////contact
+
+.contact-about {
+
+	&__contact {
+		margin-top: 200px;
+	}
+
+	&__txt {
+	}
+
+
+
+	&__title {
+
+	}
+
+	&__title-txt1 {
+		font-family: Zona;
+		font-style: normal;
+		font-weight: 800;
+		font-size: 72px;
+		line-height: 85px;
+		text-transform: uppercase;
+		color: #000000;
+	}
+
+	&__subtitle {
+
+	}
+
+	&__subtitle-txt2{
+		font-family: Montserrat;
+		font-style: normal;
+		font-size: 26px;
+		line-height: 150%;
+		color: #000000;
+	}
+}
+
+
+
+	

@@ -1,0 +1,208 @@
+@import "_mixins.scss";
+
+@include font(
+	Zona,
+	url(../fonts/ZonaPro-Bold.ttf),
+	url(../fonts/ZonaPro-Bold.woff),
+	url(../fonts/ZonaPro-Bold.woff2),
+	bold
+	);
+@include font(
+	Akrobat,
+	url(../fonts/Akrobat.ttf),
+	url(../fonts/Akrobat.woff),
+	url(../fonts/Akrobat.woff2),
+	bold
+	);
+
+$Abt:Akrobat;
+html{
+
+    width: 100%;
+    max-width: 100%;
+}
+
+  body
+  {
+    width: 100%;
+    max-width: 100%;
+    overflow-x: hidden;
+  }
+.about {
+	margin-top: 1em;
+	&__wraptitle {
+		display: flex;
+		flex-direction: column;
+	}
+	&__fleu-align{
+		display:flex;
+		align-items:center;
+	}
+	&__txt {
+		max-width: 978px;
+		min-width: 778px;
+	}
+
+	&__title {
+		font-family: Zona;
+		font-size: 72px;
+		line-height: 85px;
+		text-transform: uppercase;
+		font-style: bold;
+	}
+
+	&__txt2 {
+	}
+
+	&__subtitle {
+		font-family: $Abt;
+		font-weight: 600;
+		font-size: 24px;
+		line-height: 30px;
+		max-width: 480px;
+	}
+	&__btntxt2{
+		margin-top: 7em;
+		margin-right: 8em;
+		width: 70%;
+		display: flex;
+		justify-content: space-between;
+	}
+	/* .about__wrapbtn */
+	&__wrap__titbtn{
+		display: flex;
+		justify-content: space-around;
+	}
+
+	&__wrapbtn {
+		width: 120px;
+		height: 120px;
+		background-color: #CE0002;
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+		transition: all 0.3s;
+	}
+	&__wrapbtn:hover{
+		background-color: red;
+	}
+	&__wrapbtn:hover &__btn-arrow{
+		transform: translate(-10px,0);
+	}
+
+
+	&__link{
+		text-decoration:none;
+	}
+	/* .about__btn */
+
+	&__btn {
+		width: 80%;
+		color:white;
+		font-family: $Abt;
+		font-weight: 800;
+		font-size: 22px;
+		line-height: 27px;
+	}
+
+	/* .about__btn-arrow */
+
+	&__btn-arrow {
+		transition: all 0.3s;
+	}
+}
+.bg{
+	position: absolute;
+	top: 0;
+	right: 0;
+	width: 88%;
+	height: 59em;
+	background: #FFEE2F;
+	z-index: -11;
+}
+
+.navbar-brand{
+	margin-left: 2%;
+}
+
+
+
+
+////header__txt
+.header__txt {
+	font-family: $Abt;
+	font-size: 20px;
+	padding: 35px;
+	text-align: center;
+	text-transform: uppercase;
+	background-color:#CE0002;
+		
+		& a{
+			color :white;
+			text-decoration: none;
+		}
+
+	}
+.navbar-collapse{
+	display: flex;
+	justify-content: flex-end;
+
+}
+.navbar-nav{
+	display: flex;
+	align-items: center;
+}
+.nav-link--mama{
+	font-family: $Abt;
+	font-weight: 600;
+	font-size: 20px;
+	line-height: 25px;
+	color:black;
+}
+////s telrmina header
+
+.foother {
+	position:absolute;
+	bottom: 0;
+	width: 100%;
+	display :flex;
+	margin-top:32px;
+	background: #EFEFEF;
+
+	&__author{
+		padding: 10px;
+		margin-right: 27%;
+	}
+
+	&__contacts{
+		padding: 10px;
+		margin-left: auto; 
+	}
+
+}
+
+
+// Media Query Adaptiv
+@media only screen and (max-width: 1440px) {
+	.about{
+		&__title{
+			font-size:42px;
+		}
+		&__subtitle{
+			font-size:18px;
+		}
+		&__fleu img{
+			width: 474px;
+			height: 471px;
+		}
+		&__txt{
+			width: 678px;
+		}
+	}
+	.bbg , .bg{
+		height: 45.5em !important;
+	}
+
+		
+}
