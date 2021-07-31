@@ -1,5 +1,9 @@
 $Abt:Akrobat;
 
+.game-contact{
+	margin-top: 180px;
+}
+
 ////slieder 
 .slider{
 width: 90%; /* ширина слайдера в процентах относительно родительского блока (body) */
@@ -46,14 +50,30 @@ width: 90%; /* ширина слайдера в процентах относи�
 .game-about {
 
 	&__title {
+		margin-top: 120px;
 	}
 
 	&__title-txt1 {
+		font-family: Zona Pro;
+		font-style: normal;
+		font-weight: 800;
+		font-size: 72px;
+		line-height: 85px;
+		text-transform: uppercase;
+		color: #000000;
+
 	}
 
 	&__subtitle {
+		margin-top: 40px;
 	}
 
 	&__subtitle-txt2 {
+		font-family: Akb;
+		font-style: normal;
+		font-weight: 600;
+		font-size: 24px;
+		line-height: 30px;
+		color: #000000;
 	}
 }
