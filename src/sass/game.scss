@@ -41,3 +41,19 @@ width: 90%; /* ширина слайдера в процентах относи�
 .slick-dots li button::before {
 	opacity: 0 !important; /* убираем старые */
 }
+
+
+.game-about {
+
+	&__title {
+	}
+
+	&__title-txt1 {
+	}
+
+	&__subtitle {
+	}
+
+	&__subtitle-txt2 {
+	}
+}
