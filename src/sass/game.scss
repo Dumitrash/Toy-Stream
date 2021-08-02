@@ -6,20 +6,19 @@ $Abt:Akrobat;
 
 ////slieder 
 .slider{
-width: 90%; /* ширина слайдера в процентах относительно родительского блока (body) */
+	z-index:-2;
+	margin-top: -150px;
+	position: absolute !important;
+	width: 90%; /* ширина слайдера в процентах относительно родительского блока (body) */
+
 }
+
+
 .slider__item {
+	display: flex;
+	left: auto;
 	width: 100%; /* Ширина слайда относительно родительского блока (.slider) */
-	height: 750px; /* Высота слайда */
-
-}
-
-.bg1{
-	background: red;
-}
-
-.bg2{
-	background: purple;
+	height: 850px ; /* Высота слайда */
 }
 
 .custom-dots{
@@ -49,11 +48,172 @@ width: 90%; /* ширина слайдера в процентах относи�
 
 .game-about {
 
+
+	&__bg{
+
+		position: absolute;
+		width: 1070px;
+		height: 942px;
+		left: 870px;
+		top: 0px;
+		background: #D3D1E9;
+
+	}
+
 	&__title {
-		margin-top: 120px;
+		margin-top: 290px;
+		display: flex;
 	}
 
 	&__title-txt1 {
+		font-family: Zona Pro;
+		font-style: normal;
+		font-weight: 800;
+		font-size: 72px;
+		line-height: 85px;
+		text-transform: uppercase;
+		color: #000;
+
+	}
+
+	&__subtitle {
+		display: flex;
+		margin-top: 40px;
+	}
+
+	&__subtitle-txt2 {
+		font-family: Abt;
+		font-style: normal;
+		font-weight: 600;
+		font-size: 24px;
+		line-height: 30px;
+		color: #000000;
+	}
+
+	&__link{
+		text-decoration:none;
+	}
+
+	&__wrapbtn {
+		width: 192px;
+		height: 94px;
+		background: #CE0002;
+		display: flex;
+		transition: all 0.3s;
+		margin-top: 40px;
+	}
+
+	&__btn {
+		font-family: Abt;
+		font-style: normal;
+		font-weight: 800;
+		font-size: 22px;
+		line-height: 27px;
+		color: #FFFFFF;
+		padding:14px;
+
+	}
+
+	&__btn-arrow {
+		margin-top: 25px;
+		transition: all 0.3s;
+
+	}
+
+
+	&__wrapbtn:hover{
+		background-color: red;
+	}
+	&__wrapbtn:hover &__btn-arrow{
+		transform: translate(0,10px);
+	}
+
+
+
+
+
+}
+
+
+:root {
+   --pixel-size: 6;
+}
+
+
+.Character {
+
+
+   width: calc(32px * var(--pixel-size));
+   height: calc(32px * var(--pixel-size));
+   overflow: hidden;
+   position: relative;
+   margin: 20em auto;
+}
+
+.Character_spritesheet {
+   animation: moveSpritesheet 1s steps(4) infinite;
+   width: calc(128px * var(--pixel-size));
+   position: absolute;
+   
+}
+
+
+.pixelart {
+   image-rendering: pixelated;
+}
+
+.face-right {
+   top: calc(-32px * var(--pixel-size));
+}
+.face-up {
+   top: calc(-64px * var(--pixel-size));
+}
+.face-left {
+   top: calc(-96px * var(--pixel-size));
+}
+
+
+@keyframes moveSpritesheet {
+   from {
+      transform: translate3d(0px,0,0)
+   }
+   to {
+      transform: translate3d(-100%,0,0)
+   }
+}
+
+.wrap-corp{
+	display: flex;
+}
+
+.game-aboutt {
+
+	&__wraprow{
+		display: flex;
+	}
+
+	&__wraptitle{
+		display: flex;
+		flex-direction: column;
+	}
+
+	&__title {
+		margin-top: 100px;
+
+	}
+
+	&__title-txt1 {
+		font-family: Zona Pro;
+		font-style: normal;
+		font-weight: 800;
+		font-size: 72px;
+		line-height: 85px;
+		text-transform: uppercase;
+		color: #000000;
+	}
+
+	&__title-txt3{
+		margin-top: 100px;
 		font-family: Zona Pro;
 		font-style: normal;
 		font-weight: 800;
@@ -65,15 +225,126 @@ width: 90%; /* ширина слайдера в процентах относи�
 	}
 
 	&__subtitle {
-		margin-top: 40px;
 	}
 
 	&__subtitle-txt2 {
-		font-family: Akb;
+		font-family: Abt;
 		font-style: normal;
 		font-weight: 600;
 		font-size: 24px;
 		line-height: 30px;
 		color: #000000;
 	}
+
+	&__subtitle-txt4{
+		font-family: Abt;
+		font-style: normal;
+		font-weight: 600;
+		font-size: 24px;
+		line-height: 30px;
+		color: #000000;
+	}
+
+
+
+	&__link {
+		margin-top: 40px;
+		text-decoration: none;
+	}
+
+	&__wrapbtn {
+		width: 192px;
+		height: 94px;
+		background: #CE0002;
+		padding:26px 49px 41px 49px;
+		transition: all 1s;
+	}
+
+	&__btn {
+
+		font-family: Abt;
+		font-style: normal;
+		font-weight: 800;
+		font-size: 22px;
+		line-height: 27px;
+		color: #FFFFFF;
+
+	}
+
+	&__btn-arrow {
+		transition: all 0.3s;
+	}
+
+	&__wrapbtn:hover{
+		background-color: red;
+	}
+	&__wrapbtn:hover &__btn-arrow{
+		transform: translate(-10px, 0);
+	}
+
+	&__link2 {
+		margin-top: 40px;
+		text-decoration: none;
+		padding-bottom: 60px;
+	}
+
+	&__wrapbtn2 {
+		width: 192px;
+		height: 192px;
+		background: #CE0002;
+		padding:69px 93px 69px 20px;
+		display: flex;
+		transition: all 1s;
+	}
+
+	&__btn2 {
+
+		font-family: Abt;
+		font-style: normal;
+		font-weight: 800;
+		font-size: 22px;
+		line-height: 27px;
+		color: #FFFFFF;
+
+	}
+
+	&__btn-arrow2 {
+		margin-top: -30px;
+		margin-left: 45px;
+		transition: all 0.3s;
+	}
+
+	&__wrapbtn2:hover{
+		background-color: red;
+	}
+	&__wrapbtn2:hover &__btn-arrow2{
+		transform: translate(0, 25px);
+	}
+
+
+
+	&__wrapimg {
+	}
+
+	&__wrapimg-img1 {
+	
+	}
+
+	&__wrapimg-img2 {
+		margin-top: 250px;
+	}
+	&__wrapimg-img3{
+		margin-top: 250px;
+	}
+
+	&__wrap-part2{
+		margin-left: 50px;
+	}
+
+
+}
+
+.wrapitem2{
+	display: flex;
+	margin-top: 200px;
 }
